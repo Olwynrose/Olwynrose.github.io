@@ -1,1 +1,842 @@
+<!DOCTYPE html>
+<html>
 
+
+
+<head>
+  <title>Lauriane FELS</title>
+
+  <meta name="description" content="Page de présentation personnelle de Lauriane Fels,
+  jeune élève ingénieure à l'ESIEE Amiens. Accéder à son CV, ses projets, sa présentation complète...">
+  <meta name="keywords" content="Lauriane Fels, CV, personnal website, CV intéractif,
+  Fels, informatique, électronique, ingénieur, ingérieure, école privée, ESIEE, ESIEE Amiens,
+  Amiens, Strasbourg, Munster, Colmar, Bartholdi, Kirschleger, Couffignal, CPGE,
+  PTSI, prépa, prépa intégrée, école d'ingé, ingé">
+
+  <meta name="author" content="Lauriane FELS">
+  <meta content="text/html;charset=UTF-8" http-equiv="contenttype"> <!-- Firefox -->
+  <meta charset="utf-8"/> <!-- Chrome -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Poiret+One|Wire+One|Amatic+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Allura|La+Belle+Aurore|Reenie+Beanie" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+
+
+<body class="container">
+  <div id="center" class="bgcwhite">
+    <header>
+      <!-- <img class="imgSep" src="wct2.png"> -->
+      <div id="headInfo" class="bgclgrey">
+        <img src="medias/laurianeFelsTransparent.png" id="nom" alt="Calligraphie Lauriane Fels">
+        <img src="medias/logoTransparent.png" id="logo" alt="logo de Lauriane Fels">
+        <div id="menu">
+          <a href="index.html">Accueil</a>
+          <p>|</p>
+          <a href="index.html#apropos">À propos de moi</a>
+          <p> | </p>
+          <a href="projets.html#projets">Mes réalisations</a>
+          <p> | </p>
+          <a href="contact.html">Me contacter</a>
+        </div>
+      </div>
+        <!-- <img class="imgSep" src="wct1.png"> -->
+    </header>
+
+    <img id="pic" src="medias/soloPicture1.png" alt="photo de profil">
+      <!-- <img class="imgSep" src="wct2.png"> -->
+
+
+
+    <div class="bgclgrey" id="apropos">
+      <div class="sect">
+          <h1>Qui suis-je ?</h1>
+
+          <p>Je suis une élève en première année en école d'ingénieur à <a href="http://www.esiee-amiens.fr/" target="_blank">l'ESIEE Amiens</a>.
+          Blablabla de présentation, phrases d'accroches et cie.</p>
+
+          <hr>
+          <div id="download">
+            <a href="files/CV.pdf" target="_blank">VOIR MON CV FORMAT PDF</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="bgcwhite">
+      <div class="sect">
+        <h1>Quel est mon parcours ?</h1>
+
+        <div id="yearsCont" class="bgcwhite">
+          <img src="medias/kirschleger.jpg" alt="photo du lycée Kirschleger de Munster" class="year" id="20152016" onclick="changeCurrentYear(4);">
+          <img src="medias/couffignal.jpg" alt="photo du lycée Couffignal de Strasbourg" class="year" id="20162017" onclick="changeCurrentYear(3);">
+          <img src="medias/ufr.jpg" alt="photo de l'UFR Maths Info de Strasbourg" class="year" id="20172018" onclick="changeCurrentYear(2);">
+          <img src="medias/esiee.jpg" alt="photo de l'ESIEE Amiens" class="year current" id="20182019" onclick="changeCurrentYear(1);">
+        </div>
+
+        <div class="yearInfos bgclgrey current" id="yearInfos1">
+          <h2>École d'ingénieur</h2>
+          <h4>2018 - aujourd'hui</h4>
+          <h3>ESIEE Amiens</h3>
+          <p>Je suis actuellement en première année en école d'ingénieur à l'<strong><a href="http://www.esiee-amiens.fr/" target="_blank">ESIEE Amiens</a></strong> (80)
+            dont le diplome est reconnu par la CTI (Commission des Titres d'Ingénieur).
+            Cette école propose un cursus avec prépa intégrée, ce qui permet de rapidement
+            toucher à la technique. Bien qu'elle soit généraliste, elle est principalement
+            axée sur l'informatique et l'électronique. Elle possède également des fillières
+            en alternance, ce qui m'intéresse fortement. </p>
+        </div>
+        <div id="yearInfos2" class="bgclgrey yearInfos">
+          <h2>Licence 1 de Maths-Info</h2>
+          <h4>2017 - 2018</h4>
+          <h3>UFR Maths-Info Strasbourg</h3>
+          <p>Je suis ensuite entrée en licence 1 de Mathématiques et Informatique à
+            l'<a href="https://mathinfo.unistra.fr/">UFR de Mathématiques et Informatique</a>
+            de Strasbourg (67). Cette année m'a permit de me familiariser avec de nombreux langages
+            informatiques de part les cours mais également de part mes projets personnels
+            pour lesquels mon emploi du temps me laissait libre. J'y ai également renforcé
+            mon autonomie étant donné le peu d'encadrement de la licence par rapport à la
+            classe préparatoire dont je sortais.</p>
+            <p>Cette année a été marqué par la liberté. Bien que je ne me sois pas plu à
+            l'Université, j'ai apprécié jouir d'une grande liberté dans l'organisation de
+            mon temps, ce qui m'a permit d'approfondir ...................</p>
+        </div>
+        <div id="yearInfos3" class="bgclgrey yearInfos">
+          <h2>Classe préparatoire aux Grandes Écoles PTSI</h2>
+          <h4>2016 - 2017</h4>
+          <h3>Lycée Louis Couffignal</h3>
+          <p>Après le bac, j'ai intégré une Classe Préparatoire aux Grandes Écoles
+            intitulée "Physique, Technologie et Sciences de l'Ingénieur" au lycée
+            <a href="#">Louis Couffignal</a> de Strasbourg (67). Cette année
+            m'a enseigné la rigueur, la persévérance et la passion. Les 4 heures du
+            samedi matins étaient réservées aux devoirs sur tables. Il fallait donc
+            travailler sans relâche, ce qui force à la régularité. Il y avait également
+            une heure de kholle par semaine par matière. N'ayant pas fais une terminale S SI,
+            j'avais 2 heures par semaine de rattrapage en Sciences Industrielles et j'avais
+            choisi une seconde langue optionnelle, l'allemand.</p>
+            <p>Cette année m'a particulèrement plu par la passion que les professeurs
+            ont pu généré en moi .................... </p>
+        </div>
+        <div class="yearInfos bgclgrey" id="yearInfos4">
+          <h2>Terminale scientifique SVT</h2>
+          <h4>2015 - 2016</h4>
+          <h3>Lycée Frédéric Kirschleger</h3>
+          <p>J'ai fais mon année de terminale dans le petit lycée de vallée : le lycée
+            <a href="https://lyc-kirschleger.monbureaunumerique.fr/">Frédéric Kirschleger</a>
+            de Munster (68).
+            J'y ai effectué une année de terminale scientifique SVT avec option
+            Mathématiques. J'ai également suivi des cours facultatifs de LV3 espagnol
+            ainsi que d'Arts Plastiques. J'en suis sortie diplomée du Baccalauréat
+            avec la mention Bien et une moyenne de 14.2 sur vingt.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bgclgrey">
+        <div class="sect">
+            <h1>Quelles sont mes expériences ?</h1>
+      </div>
+    </div>
+
+    <div class="bgcwhite">
+      <div class="sect">
+          <h1>Mon caractère</h1>
+
+          <div id="characters">
+            .
+            <div class="char">
+              <div class="Charbubble bgcblue">
+                <p>Passionnée</p>
+              </div>
+              <p class="charInfos">
+
+                </menu>
+              </p>
+            </div>
+
+            <div class="char">
+              <div class="Charbubble bgcblue">
+                <p>Déterminée</p>
+              </div>
+              <p class="charInfos">
+                Après deux décrochages scolaire, j'ai réussi à reprendre le chemin de l'école
+                et à trouver ma voie. Je suis plus que déterminée à terminer mes études et être diplomée.
+              </p>
+            </div>
+
+            <div class="char">
+              <div class="Charbubble bgcblue">
+                <p>Appliquée</p>
+              </div>
+              <p class="charInfos">
+                J'aime les choses bien faites et j'ai même tendance à être trop
+                perfectionniste parfois.
+              </p>
+            </div>
+
+            <div class="char">
+              <div class="Charbubble bgcblue">
+                <p>Curieuse</p>
+              </div>
+              <p class="charInfos">
+                J'aime apprendre, découvrir de nouvelle chose. Petite, je voulais tout savoir
+                sur tout. Depuis, je me suis raisonnée, mais je chercher toujours à tout skillrendre.
+              </p>
+            </div>
+
+            <div class="char">
+              <div class="Charbubble bgcblue">
+                <p>Motivée</p>
+              </div>
+              <p class="charInfos">
+                J'ai trouvé une école qui me permet d'étudier les domaines que j'aime
+                et qui allie à la fois théorie et pratique ; Je suis donc dans mon élément au
+                quotidien.
+              </p>
+            </div>
+
+            <div class="char">
+              <div class="Charbubble bgcblue">
+                <p>Créative</p>
+              </div>
+              <p class="charInfos">
+
+              </p>
+            </div>
+
+            <div class="char">
+              <div class="Charbubble bgcblue">
+                <p>Bienveillante</p>
+              </div>
+              <p class="charInfos">
+
+              </p>
+            </div>
+
+            <div class="char">
+              <div class="Charbubble bgcblue">
+                <p>Ambitieuse</p>
+              </div>
+              <p class="charInfos">
+                Je préfère les projets ambitieux et utiles aux petits projets qui ne
+                demandent pas ou peu de réflexion. Je chercher en permanence à me
+                surpasser.
+              </p>
+            </div>
+
+            <div class="char">
+              <div class="Charbubble bgcblue">
+                <p>Autonome</p>
+              </div>
+              <p class="charInfos">
+
+              </p>
+            </div>
+
+          </div>
+
+      </div>
+    </div>
+
+    <div class="bgclgrey">
+        <div class="sect">
+            <h1>Quelles sont mes compétences ?</h1>
+
+            <h3 class="skillCat">Langues</h3>
+            <div class="skill">
+              <p class="skillName">Français</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 95" style="width:0"></div>
+              </div>
+              <p class="skillInfos">Langue maternelle</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">Anglais</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 78" style="width:0"></div>
+              </div>
+              <p class="skillInfos">CECR B2</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">Allemand</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 70" style="width:0"></div>
+              </div>
+              <p class="skillInfos">CECR B1</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">Espagnol</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 45" style="width:0"></div>
+              </div>
+              <p class="skillInfos">CECR A2</p>
+            </div>
+
+            <h3 class="skillCat">Langages informatiques</h3>
+            <div class="skill">
+              <p class="skillName">Java</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 80" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">projets personnels</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">HTML</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 78" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">projets personnels et scolaires</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">CSS</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 74" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">projets personnels et scolaires</p>
+            </div>
+
+            <div class="skill">
+              <div>
+                <p class="skillName" style="margin-bottom: 0;">JavaScript</p>
+                <p class="skillInfosP" style="margin-top: -0.8vh; text-align: right;">(dont JQuery)</p>
+              </div>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 70" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">projets personnels et scolaires</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">C</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 58" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">projets personnels et scolaires</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">Latex</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 58" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">projets personnels</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">Python</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 52" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">projets scolaires</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">XML</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 46" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">projets personnels</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">C++</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 46" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">projets personnels</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">Matlab</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 46" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">projets personnels</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">Bash</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 40" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">projets personnels et scolaires</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">MySQL</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 35" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">projets scolaires</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">Maple</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 30" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">projets scolaires</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">OCaml</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 30" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">projets scolaires</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">C#</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 23" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">projets personnels</p>
+            </div>
+
+            <h3 class="skillCat">Logiciels</h3>
+            <div class="skill">
+              <p class="skillName">Libre Office</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 76" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">usage personnel</p>
+            </div>
+
+            <div class="skill">
+              <div>
+                <p class="skillName" style="margin-bottom: 0;">Photoshop</p>
+                <p class="skillInfosP" style="margin-top: -0.8vh; text-align: right;">(CS5 et CS6)</p>
+              </div>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 70" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">usage personnel</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">Premiere Pro</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 63" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">usage personnel</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">Solid Works</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 58" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">usage personnel et scolaire</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">Gimp</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 48" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">usage personnel et scolaire</p>
+            </div>
+
+            <div class="skill">
+              <p class="skillName">Unity</p>
+              <div class="progressBar">
+                <div class="bgBar"></div>
+                <div class="fgBar 28" style="width:0"></div>
+              </div>
+              <p class="skillInfosP">usage personnel</p>
+            </div>
+
+      </div>
+    </div>
+
+    <div class="bgcwhite">
+        <div class="sect">
+            <h1>Quelles sont mes centres dintérêts ?</h1>
+
+            <div id="hobbiesList">
+              <div class="hobbyBubble">
+
+              </div>
+
+              <div class="hobbyBubble">
+
+              </div>
+
+              <div class="hobbyBubble">
+
+              </div>
+
+              <div class="hobbyBubble">
+
+              </div>
+
+              <div class="hobbyBubble">
+
+              </div>
+
+              <div class="hobbyBubble">
+
+              </div>
+
+              <div class="hobbyBubble">
+
+              </div>
+            </div>
+
+            <div id="hobbies">
+              <hr>
+              <div class="hobby">
+                <h2>Programmation</h2>
+              </div>
+              <hr>
+              <div class="hobby">
+                <h2>Nature</h2>
+              </div>
+              <hr>
+              <div class="hobby">
+                <h2>Jeux vidéos</h2>
+              </div>
+
+              <hr>
+              <div class="hobby">
+                <h2>Bricolage</h2>
+              </div>
+              <hr>
+              <div class="hobby">
+                <h2>Dessin</h2>
+              </div>
+              <hr>
+              <div class="hobby">
+                <h2>Sport</h2>
+              </div>
+              <hr>
+              <div class="hobby" id="travel">
+                <h2>Voyage</h2>
+                <div id="travelCont">
+                  <div id="travelMap">
+                    <img src="medias/mapmonde.png" alt="map" id="map">
+                    <img src="medias/locMarker.png" alt="localisation marker" id="bilbao" class="locMarker" onmouseover="changeDestination(1, 'bilbao');">
+                    <img src="medias/locMarker.png" alt="localisation marker" id="newyork" class="locMarker" onmouseover="changeDestination(2, 'newyork');">
+                    <img src="medias/locMarker.png" alt="localisation marker" id="washington" class="locMarker" onmouseover="changeDestination(3, 'washington');">
+                    <img src="medias/locMarker.png" alt="localisation marker" id="moscou" class="locMarker" onmouseover="changeDestination(4, 'moscou');">
+                    <img src="medias/locMarker.png" alt="localisation marker" id="stpeters" class="locMarker" onmouseover="changeDestination(5, 'stpeters');">
+                    <img src="medias/locMarker.png" alt="localisation marker" id="rome" class="locMarker" onmouseover="changeDestination(6, 'rome');">
+                    <img src="medias/locMarker.png" alt="localisation marker" id="newcastle" class="locMarker" onmouseover="changeDestination(7, 'newcastle');">
+                  </div>
+
+
+
+                  <div id="travelPlus">
+
+                    <div class="travelInfos" id="travelInfo1">
+                      <div>
+                        <h4>Bilbao, Espagne</h4>
+                        <h4> • </h4>
+                        <h4>Août 2017</h4>
+                      </div>
+                      <div>
+                        <p>A l'occasion de l'<a href="http://grammars.grlmc.com/DeepLearn2017/">
+                          International Summer School on Deep Learning'</a>,
+                          je me suis rendu à Bilbao avec mon compagnon. Pendant une semaine,
+                          nous avons enchainé les conférences avec parmi elles, celles de Thomas Breuel de NVidia,
+                          Jianfeng Gao de Microsoft sur le langage naturel, ou encore Giorgio N. Yannakakis et Julian Togelius
+                          sur les applications du deep learning dans les jeux vidéo.</p>
+                          <p>Nous en avons également profité pour visiter la ville de Bilbao, le musée
+                          Guggenhein et son exposition sur Bill Viola ainsi que d'aller à la plage.</p>
+                      </div>
+                    </div>
+                    <div class="travelInfos" id="travelInfo2" style="visibility:collapse;">
+                      <div>
+                        <h4>New-York, États-Unis</h4>
+                        <h4> • </h4>
+                        <h4>Mars 2013</h4>
+                      </div>
+                      <div>
+                        <p>Le cours optionnel d'arts-plastique de mon lycée proposait chaque annéee
+                          un voyage. J'ai donc participé entre autres, à celui aux États-Unis. Pendant
+                          une semaine, j'ai donc visité les villes de New-York et Washington.</p>
+                          <p>Durant mes 3 jours à New-York, j'ai pu visiter le musée du MOMA, contourner la statue de la liberté,
+                          monter en haut de l'Empire State Building, me ballader dans Central Park, voir
+                          Time Square, assister et participer à une messe de gospel.. etc</p>
+                      </div>
+                    </div>
+                    <div class="travelInfos" id="travelInfo3" style="visibility:collapse;">
+                      <div>
+                        <h4>Washington, États-Unis</h4>
+                        <h4> • </h4>
+                        <h4>Mars 2013</h4>
+                      </div>
+                      <div>
+                        <p>Le cours optionnel d'arts-plastique de mon lycée proposait chaque annéee
+                          un voyage. J'ai donc participé entre autres, à celui aux États-Unis. Pendant
+                          une semaine, j'ai donc visité les villes de New-York et Washington.</p>
+                          <p>Durant mes 3 jours à Washington, j'ai pu passer devant la Maison Blanche, voir le Capitol, me ballader dans le
+                          National Mall, visiter le National Museum of the AMerican Indian.. etc</p>
+
+                      </div>
+                    </div>
+                    <div class="travelInfos" id="travelInfo4" style="visibility:collapse;">
+                      <div>
+                        <h4>Moscou, Russie</h4>
+                        <h4> • </h4>
+                        <h4>Arvil 2012</h4>
+                      </div>
+                      <div>
+                        <p>Le cours optionnel d'arts-plastique de mon lycée proposait chaque annéee
+                          un voyage. J'ai donc participé entre autres, à celui en Russie. Pendant
+                          une semaine, j'ai donc visité les villes de Moscou et St-Petersbourg.</p>
+                      </div>
+                    </div>
+                    <div class="travelInfos" id="travelInfo5" style="visibility:collapse;">
+                      <div>
+                        <h4>St-Petersbourg, Russie</h4>
+                        <h4> • </h4>
+                        <h4>Avril 2012</h4>
+                      </div>
+                      <div>
+                        <p>Le cours optionnel d'arts-plastique de mon lycée proposait chaque annéee
+                          un voyage. J'ai donc participé entre autres, à celui en Russie. Pendant
+                          une semaine, j'ai donc visité les villes de Moscou et St-Petersbourg.</p>
+                      </div>
+                    </div>
+                    <div class="travelInfos" id="travelInfo6" style="visibility:collapse;">
+                      <div>
+                        <h4>Rome, Italie</h4>
+                        <h4> • </h4>
+                        <h4>Mai 2010</h4>
+                      </div>
+                      <div>
+                        <p>Les cours de religion de mon collège proposait chaque année un voyage
+                          à Rome auquel j'ai participé en 2010. </p>
+                          <p>J'ai ainsi vu le coliseum, la fontaine de Trévi, la chapelle Sixtine, je suis
+                          montée en haut de la Basilique St-Pierre, j'ai déambulé dans les ruines d'Ostie
+                          et le forum romain et j'ai visité le Panthéon et les catacombes de la ville.</p>
+                      </div>
+                    </div>
+                    <div class="travelInfos" id="travelInfo7" style="visibility:collapse;">
+                      <div>
+                        <h4>New-Caslte, Angleterre</h4>
+                        <h4> • </h4>
+                        <h4>Juillet 2016</h4>
+                      </div>
+                      <div>
+                        <p>Mon compagnon effectuant son stage de fin d'étude à New-Castle et ayant terminé
+                        mon année scolaire, je l'ai rejoins pour une durée d'un mois. J'ai donc vécu 1 mois
+                        dans une collocation avec mon compagnon et deux anglais.</p>
+                        <p>C'est durant cette période que j'ai été introduite à la programmation. J'ai donc
+                        appris les rudiments du C et programmé mon premier réel programme : le memory. J'ai
+                        ensuite commencé le Java et recodé un memory avec une interface graphique.</p>
+                      </div>
+                    </div>
+
+                    <div class="travelPic" id="travelPic1">
+                      <div class="polaroid pola1" style="z-index:5;" onclick="nextPic(1);">
+                        <div class="polaPic">
+                          <img src="medias/bilbao1.jpg" alt="photo de Bilbao">
+                        </div>
+                        <p>Début de conférence</p>
+                      </div>
+
+                      <div class="polaroid pola2" style="z-index:4;" onclick="nextPic(1);">
+                        <div class="polaPic">
+                          <img src="medias/bilbao2.jpg" alt="photo de Bilbao">
+                        </div>
+                        <p>La salle de conférence</p>
+                      </div>
+
+                      <div class="polaroid pola3" style="z-index:3;" onclick="nextPic(1);">
+                        <div class="polaPic">
+                          <img src="medias/bilbao3.jpg" alt="photo de Bilbao">
+                        </div>
+                        <p>Le palais Euskalduna</p>
+                      </div>
+
+                      <div class="polaroid pola1" style="z-index:2;" onclick="nextPic(1);">
+                        <div class="polaPic">
+                          <img src="medias/bilbao4.jpg" alt="photo de Bilbao">
+                        </div>
+                        <p>Le musée Guggenheim</p>
+                      </div>
+
+                      <div class="polaroid pola2" style="z-index:1;" onclick="nextPic(1);">
+                        <div class="polaPic">
+                          <img src="medias/bilbao5.jpg" alt="photo de Bilbao">
+                        </div>
+                        <p>Un chien fleuri</p>
+                      </div>
+                  </div>
+
+
+                  <div class="travelPic" id="travelPic2" style="visibility: collapse;">
+                    <div class="polaroid pola1" style="z-index: 1;" onclick="nextPic(2);">
+                      <div class="polaPic">
+                        <img src="medias/newyork1.jpg" alt="photo de NewYork">
+                      </div>
+                      <p>Haut de l'Empire State Building</p>
+                    </div>
+                </div>
+
+
+
+                <div class="travelPic" id="travelPic3" style="visibility: collapse;">
+                  <div class="polaroid pola1" style="z-index:1;" onclick="nextPic(3);">
+                    <div class="polaPic">
+                      <img src="medias/russie1.jpg" alt="photo de Washington">
+                    </div>
+                    <p>Hm</p>
+                  </div>
+              </div>
+
+
+              <div class="travelPic" id="travelPic4" style="visibility: collapse;">
+                <div class="polaroid pola1" style="z-index:1;" onclick="nextPic(4);">
+                  <div class="polaPic">
+                    <img src="medias/russie1.jpg" alt="photo de Moscou">
+                  </div>
+                  <p>Devant la cathédrale Basile-le-Bienheureux</p>
+                </div>
+            </div>
+
+
+            <div class="travelPic" id="travelPic5" style="visibility: collapse;">
+              <div class="polaroid pola1" style="z-index:1;" onclick="nextPic(5);">
+                <div class="polaPic">
+                  <img src="medias/russie1.jpg" alt="photo de St-Petersbourg">
+                </div>
+                <p>Hm</p>
+              </div>
+            </div>
+
+
+            <div class="travelPic" id="travelPic6" style="visibility: collapse;">
+              <div class="polaroid pola1" style="z-index:2;" onclick="nextPic(6);">
+                <div class="polaPic">
+                  <img src="medias/rome1.jpg" alt="photo de Rome">
+                </div>
+                <p>Le coliseum</p>
+              </div>
+
+              <div class="polaroid pola2" style="z-index:1;" onclick="nextPic(6);">
+                <div class="polaPic">
+                  <img src="medias/rome2.jpg" alt="photo de Rome">
+                </div>
+                <p>Le coliseum</p>
+              </div>
+          </div>
+
+
+          <div class="travelPic" id="travelPic7" style="visibility: collapse;">
+            <div class="polaroid pola1" style="z-index:1;" onclick="nextPic(7);">
+              <div class="polaPic">
+                <img src="medias/russie1.jpg" alt="photo de Rome">
+              </div>
+              <p>Hmm</p>
+            </div>
+        </div>
+
+
+                </div><!-- fin div travelCont -->
+
+
+
+              </div> <!-- fin div travel -->
+              <hr>
+
+            </div>
+
+      </div>
+    </div>
+
+    <div class="bgclgrey">
+      <div class="sect">
+        <h1>Quels sont mes réalisations ?</h1>
+
+        <div id="listProjects">
+          <div class="projectPreview" style="background-image: url('medias/info1.jpg');">
+            <div class="projectInfos">
+              <h3 classe="projectTitle">Awale</h3>
+              <a class="projectLink" href="projets.html#proj1">VOIR LE PROJET</a>
+            </div>
+          </div>
+          <div class="projectPreview" style="background-image: url('medias/info2.jpg');">
+            <div class="projectInfos">
+              <h3 classe="projectTitle">Memory</h3>
+              <a class="projectLink" href="#proj1">VOIR LE PROJET</a>
+            </div>
+          </div>
+          <div class="projectPreview" style="background-image: url('medias/info3.jpg');">
+            <div class="projectInfos">
+              <h3 classe="projectTitle">Jeu de plateforme</h3>
+              <a class="projectLink" href="#proj1">VOIR LE PROJET</a>
+            </div>
+          </div>
+          <div class="projectPreview" style="background-image: url('medias/elec1.jpg');">
+            <div class="projectInfos">
+              <h3 classe="projectTitle">Carte électronique</h3>
+              <a class="projectLink" href="#proj1">VOIR LE PROJET</a>
+            </div>
+          </div>
+          <div class="projectPreview" style="background-image: url('medias/elec2.jpg');">
+            <div class="projectInfos">
+              <h3 classe="projectTitle">Lampes de jardin</h3>
+              <a class="projectLink" href="#proj1">VOIR LE PROJET</a>
+            </div>
+          </div>
+          <div class="projectPreview" style="background-image: url('medias/diy1.jpg');">
+            <div class="projectInfos">
+              <h3 classe="projectTitle">Dôme</h3>
+              <a class="projectLink" href="projets.html#dome">VOIR LE PROJET</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2019 Lauriane Fels. All rights reserved.
+  </footer>
+
+</body>
+
+
+
+
+
+</html>
