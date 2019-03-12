@@ -1,0 +1,677 @@
+html {
+  position: relative;
+  overflow-x: hidden
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+hr {
+  width: 65vw;
+  margin: 4vh 0;
+}
+
+h1 {
+  color: rgb(107,190,212);
+  font-family: 'Amatic SC', cursive;
+  font-size: 10vh;
+  margin: 6vh;
+}
+
+h2 {
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  font-size: 7vh;
+  margin: 0;
+  margin-top: 4vh;
+  width: 50%;
+  text-align: left;
+}
+
+h4 {
+  color: grey;
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 3vh;
+  margin: -1vh 0 2vh 0;
+
+  text-align: right;
+}
+
+a {
+  color: rgb(107,190,212);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p {
+  font-size: 3.5vh;
+  text-align: justify;
+  font-family: 'Open Sans Condensed', sans-serif;
+  max-width: 65vw;
+}
+
+
+#center {
+  position: relative;
+  width: 100%;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100vh;
+  margin: 0;
+}
+
+#headInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#nom {
+  height: 13vh;
+  width: auto;
+  max-width: 50vw;
+}
+
+#logo {
+  height: 15vh;
+  margin: 10vh;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 50vw;
+}
+
+#menu a {
+  font-size: 3.5vh;
+}
+
+#menu a:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+#menu p {
+  font-size: 2.5vh;
+  font-weight: bold;
+  text-align: center;
+  width: 4px;
+}
+
+#pic {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.imgSep {
+  width: 100%;
+  height: 20vh;
+}
+
+#download{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6vh;
+}
+
+#download a {
+  font-size: 3.5vh;
+  border: solid 2px black;
+  text-align: center;
+  padding: 1vh 3vw;
+  color: black;
+  text-decoration: none;
+
+  transition: all 0.5s;
+}
+
+#download a:hover {
+  background-color: rgb(245,245,245);
+  font-size: 3.7vh;
+  transition: all 0.5s;
+}
+
+.sect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10vh;
+}
+
+#apropos {
+  margin-top: -5px;
+}
+
+#apropos p {
+  text-indent: 4vw;
+}
+
+#listProjects {
+  display: flex;
+  width: 92vw;
+  margin: 10vh 0;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.projectPreview {
+  position: relative;
+  width: 25vw;
+  height: 25vw;
+  margin: 1.8vw;
+  background-size: contain;
+  transition: 0.5s;
+}
+
+.projectPreview:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+.projectPreview:hover div h3{
+  margin: 3%;
+  color: rgba(255,255,255,1);
+  transition: margin 0.6s, color 0.8s;
+}
+
+.projectPreview:hover div a{
+  margin: 3%;
+  transition: margin 0.6s;
+}
+
+.projectInfos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.projectInfos h3 {
+  font-size: 8vh;
+  color: rgba(255,255,255,0);
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+  margin: 10%;
+  transition: margin 0.6s, color 0.4s;
+}
+
+.projectInfos:hover {
+  opacity: 100;
+  transition: opacity 0.5s;
+}
+
+.projectLink {
+  width: 50%;
+  /*font-size: 130%;*/
+  font-size: 3vh;
+  border: solid 2px white;
+  text-align: center;
+  padding: 2% 6%;
+  color: white;
+  background-color: none;
+  margin: 10%;
+  text-decoration: none;
+  transition: margin 0.6s, background-color 0.5s;
+}
+
+.projectLink:hover {
+  background-color: rgba(255,255,255,0.3);
+  transition: background-color 1s;
+}
+
+#yearsCont {
+  height: 13.6vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  width: 65vw;
+  margin: 0;
+  margin-top: 3vh;
+}
+
+.year {
+  position: relative;
+  width: 13vw;
+  height: 13vw;
+  margin: 0 1vw;
+  object-fit: cover;
+  filter: blur(3px) opacity(75%);
+  box-shadow: none;
+  padding: 0;
+
+  transition: filter 0.5s, box-shadow 0.5s, height 0.5s, width 0.5s;
+}
+
+img.year.current {
+  filter: saturate(150%) opacity(85%);
+  box-shadow: 0 0 3px 0.1vw rgb(200,200,200);
+  height: 13.5vw;
+  width: 13.5vw;
+  transition: all 0.5s;
+}
+
+div.yearInfos {
+  position: relative;
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: collapse;
+}
+
+.yearInfos.current {
+  visibility: visible
+}
+
+.yearInfos h2 {
+  font-size: 7vh;
+  width: 70%;
+  text-align: left;
+}
+
+.yearInfos h4 {
+  font-size: 3.5vh;
+    width:85%;
+}
+
+.yearInfos h3 {
+  color: white;
+  background-color: gray;
+  font-family: 'Amatic SC', cursive;
+  font-size: 4.5vh;
+  margin: -3vh 0 2vh -3vw;
+  padding: 0.6vh 3vw;
+  align-self: flex-start;
+}
+
+.yearInfos p {
+  width: 75%;
+  margin: 0;
+  text-indent: 4vw;
+}
+
+.yearInfos p:last-child {
+  margin-bottom: 5vh;
+}
+
+#characters {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: space-around;
+}
+
+.char {
+  width: 11.5vw;
+  margin: 1.5vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Charbubble {
+  width: 8vw;
+  height: 8vw;
+
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.charInfos {
+  font-size: 2.5vh;
+}
+
+h3.skillCat {
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  font-size: 6.5vh;
+  margin: 6vh 0 0 0;
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+}
+
+.skillName {
+  width: 10vw;
+  text-align: right;
+}
+
+.progressBar {
+  position: relative;
+  width: 35vw;
+  margin: 0 3vw;
+}
+
+.bgBar, .fgBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bgBar {
+  background-color: grey;
+  width: 100%;
+  height: 0.6vh;
+  margin-top: 0.3vh;
+}
+
+.fgBar {
+  background-color: rgb(107,190,212);
+  box-shadow: 0 0 0.4vh 0.25vh rgb(107,190,212);
+  height: 1.2vh;
+  transition: 3s;
+}
+
+.skillInfos {
+  width: 10vw;
+}
+
+.skillInfosP {
+  width: 10vw;
+  font-size: 2.1vh;
+  color: grey;
+}
+
+#hobbiesList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 65%;
+}
+
+.hobbyBubble {
+  width: 5vw;
+  height: 5vw;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+#travel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+}
+
+#travelCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4vh 0;
+}
+
+#travelMap {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height:  20vw;
+  width: 65vw;
+}
+
+#travelMap img#map {
+  align-self: center;
+  height: 100%;
+}
+
+#travelMap img.locMarker {
+  width: 1vw;
+  position: absolute;
+}
+
+#travelMap img.locMarker.current {
+  transform: scale(1.5) translateY(-15%);
+}
+
+#bilbao {
+  top: 19.2%;
+  left: 46.3%;
+}
+
+#newyork {
+  top: 20%;
+  left: 35.7%;
+}
+
+#washington {
+  top: 22.5%;
+  left: 34.6%;
+}
+
+#moscou {
+  top: 11.9%;
+  left: 52.8%;
+}
+
+#stpeters {
+  top: 8%;
+  left: 50.8%;
+}
+
+#rome {
+  top: 19.9%;
+  left: 48.7%;
+}
+
+#newcastle {
+  top: 10.5%;
+  left: 46.6%;
+}
+
+#travelPlus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  height: 30vw;
+}
+
+.travelInfos {
+  width: 65vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-right: 6vw;
+  margin-top: 2vh;
+  padding: 1.5vw;
+
+  background-color: lightgray;
+}
+
+.travelInfos div:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.travelInfos div h4 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: rgb(50, 50, 50);
+  margin: 0;
+  margin-left: 1vw;
+}
+
+.travelInfos div h4:first-child {
+  color: grey;
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 3.5vh;
+  margin: 0;
+  margin-top: 0.8vh;
+}
+
+.travelInfos p {
+  font-size: 2.5vh;
+}
+
+.travelPic {
+  position: relative;
+  width: 30vw;
+  height: 27vw;
+}
+
+.polaroid {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 20vw;
+  height: 24vw;
+
+  border: solid 1px black;
+  border-radius: 1vh;
+  box-shadow: -0.5vh 1vh 3vh gray;
+
+  transition: right 0.75s;
+}
+
+.polaPic {
+  width: 20vw;
+  height: 20vw;
+
+  background-image: linear-gradient(9deg, white, rgba(200, 200,200, 1) 40%, white);
+  border-radius: 1vh 1vh 0 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.polaroid img {
+  max-width: 18vw;
+  max-height: 18vw;
+}
+
+.polaroid p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0;
+  border-radius:  0 0 1vh 1vh;
+
+  height: 4vw;
+  width: 100%;
+
+  background-color: rgba(225,225,225,1);
+  color: rgb(80,80,80);
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 2.8vh;
+  text-align: center;
+}
+
+.pola1 {
+  transform: rotate(0deg);
+}
+
+.pola2 {
+  transform: rotate(10deg);
+}
+
+.pola3 {
+  transform: rotate(-5deg);
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  height: 6vh;
+  width: 100%;
+  background-color: lightblue;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2vh;
+}
+
+@keyframes slide {
+  from {
+    right: 0;
+  }
+  to {
+    right: -25vw;
+  }
+}
+
+.bgcwhite {
+  background-color: white;
+  width: 100%;
+}
+
+.bgcbeige {
+  width: 100%;
+  background-color: rgb(243,240,233);
+}
+
+.bgclgrey {
+  background-color: lightgrey;
+  width: 100%;
+}
+
+.bgcgrey {
+  background-color: grey;
+}
+
+.bgcblue {
+  background-color: rgb(107,190,212);
+}
